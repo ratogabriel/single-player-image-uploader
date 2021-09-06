@@ -124,5 +124,5 @@ def create_dictionary(dir, fill_entity_name):
 
 if __name__ == "__main__":
     f = Figlet(font='slant')
-    print (f.renderText('Super Single Player Img Uploader Pro Inc Utopia'))
+    print (f.renderText('Super Single Player Image Uploader'))
     cli()
