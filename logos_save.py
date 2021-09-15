@@ -104,13 +104,13 @@ def cli():
     pass
 
 @cli.command()
-@click.option("--dir", default=MY_DIR, help="Search directory for squared img, default is current")
-@click.option("--dir_alternative", default=MY_DIR, help="Search directory for circle img, default is current")
+@click.option("--dir", default=MY_DIR, help="Search directory for circle img, default is current")
+@click.option("--dir_alternative", default=MY_DIR, help="Search directory for square img, default is current")
 @click.option("--file_dict", default=FILE_DICT, help="A dictionary of files name to entity name")
 @click.option("--upload", help="Upload images to entities-api", default=False)
 def create_imgs(dir, file_dict, dir_alternative, upload):
     click.echo("Single Player image uploader CLI")
-    # run(dir, file_dict, False, upload)
+    run(dir, file_dict, False, upload)
     run(dir_alternative, file_dict, True, upload)
 
 @cli.command()
